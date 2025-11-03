@@ -23,8 +23,8 @@ const handleClose = () => setIsOpen(false)
 const [ isSelected, setIsSelected ] = useState(null)
 
 const certifications = [
-            { title: "Python Course", org: "Coursera", img: coursera, height: 550, width: 800 },
-            { title: "Figma Course", org: "Aptech", img: aptech, height: 650, width: 550 },
+            { title: "Python Course", org: "Coursera", img: coursera, height: '80vh', width: '70vw' },
+            { title: "Figma Course", org: "Aptech", img: aptech, height: '80vh', width: '70vw' },
           ]
 
   return (
@@ -64,16 +64,19 @@ const certifications = [
 </motion.p>
 
 
-        <motion.button
-          whileHover={{
-            scale: 1.1,
-            background:
-              "linear-gradient(to right, #06b6d4, #3b82f6, #06b6d4)",
-          }}
-          className="!px-8 !py-3 bg-cyan-500 rounded-full text-white font-semibold shadow-lg hover:shadow-cyan-400/50 transition-all"
-        >
-          Explore My Work 🚀
-        </motion.button>
+       <motion.a
+  href="https://www.canva.com/design/DAG3rDhttBY/suGubyx4BOlkcOEasLO2lA/view?utm_content=DAG3rDhttBY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h499396132d"
+  target="_blank"
+  rel="noopener noreferrer"
+  whileHover={{
+    scale: 1.1,
+    background: "linear-gradient(to right, #06b6d4, #3b82f6, #06b6d4)",
+  }}
+  className="!px-8 !py-3 bg-cyan-500 rounded-full text-white font-semibold shadow-lg hover:shadow-cyan-400/50 transition-all z-50 relative"
+>
+  Explore My Resume 🚀
+</motion.a>
+
       </section>
 
       {/* SKILLS SECTION */}
