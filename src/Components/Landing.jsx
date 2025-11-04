@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import todo from '../assets/todo.jpg'
+import python from '../assets/python.jpg'
 import karve from '../assets/karve.jpg'
 import social from '../assets/social.jpg'
 import BasicModal from "./BasicModal";
@@ -121,7 +122,7 @@ const certifications = [
         className="mt-32 px-6 text-center"
       >
         <h2 id='projects' className="text-4xl font-bold mb-12 text-cyan-400">Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto">
           {[
             {
               title: "Social Media App",
@@ -141,6 +142,12 @@ const certifications = [
               img: todo,
               url: 'https://ahmedcs09.github.io/todo-list/'
             },
+            {
+              title: "Code Detection System",
+              desc: "A functional web interface where you can check three types of python code errors",
+              img: python,
+              url: 'http://127.0.0.1:5000/'
+            }
           ].map((proj, index) => (
             <motion.div
               key={proj.title}
